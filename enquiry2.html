@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>send an enquiry</title>
+  <style>
+   
+    
+    
+    @keyframes log {
+      from{
+          background-image: url(logo.png);
+          z-index: 20;
+      
+      }
+      to{
+        
+          background-image: url(bg-img.jpg);
+      
+        
+      }
+    }
+
+    @keyframes fade {
+     from{
+      opacity: 0;
+     }
+     to{
+      opacity: 0;
+     }
+    }
+    
+    /*CSS to style the form */
+    .logo{
+      width: auto;
+      height: 4cm;
+    }
+    body {
+      animation-name: log;
+      animation-delay: 0s;
+      animation-duration: 6s;
+     
+      animation-iteration-count: 1;
+      background-image: url(bg-img.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      font-size: xx-large;
+      margin: 10px;
+      padding: 20px;
+    }
+
+    h2 {
+      z-index: 1;
+      color: rgba(28, 61, 162, 0);
+      text-align: center;
+      animation-name: fade;
+      animation-delay: 0ms;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+      
+    }
+
+    .container {
+      z-index: 1;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label,
+    select,
+    input[type="submit"] {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      z-index: 1;
+    }
+
+    input[type="submit"] {
+        height: 60px;
+      font-size: xx-large;
+      background-color: rgba(248, 47, 7, 0.986);
+      color: rgb(245, 245, 245);
+      cursor: pointer;
+      margin: auto;
+      border-color: rgb(240, 237, 237);
+      z-index: 1;
+    }
+
+    .container{
+      animation-name: fade;
+      animation-duration: 5s;
+    }
+    form{
+      font-size: large;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-color: rgba(255, 255, 255, 0.705);
+      color: rgb(60,40,40);
+      border: 10px solid white;
+      border-radius: 1cm;
+      text-align: center;
+      height: 53vh;
+      width: 30vw;
+      
+      padding: 30px;
+      position: relative;
+      margin-left: -5vw;
+      margin-bottom: 0%;
+    }
+    form>label{
+      margin: auto;
+      padding: 7px;
+    }
+    form>input{
+      margin: auto;
+      padding: 7px;
+    }
+    form>select{
+      color: rgb(152, 39, 39);
+      background-color:rgba(255, 255, 255, 0.705) ;
+      border: 0px solid white;
+      border-radius: 1cm;
+      height: 2rem;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  </style>
+</head>
+<body>
+     
+     <img src="logo.png" alt="logo" class="logo" style="left: auto; margin-left: 650px;">
+     <button 
+     style="height: max-content;
+     width: max-content;
+     font-size: x-large;
+     color: rgb(60,40, 40);
+     background-color: rgba(255, 255, 255, 0.901);
+     border: 1px solid white;
+     border-radius: 1cm;
+      cursor: pointer;
+      position: relative;
+      margin-left: -54vw;
+     " onclick="window.location.href='table.html'">< Go Back</button>
+     <h2 style="background-color: rgba(255, 255, 255, 0.49); margin-top: 0%;"><marquee style="color: rgba(254, 6, 6, 0.989);">send an enquiry to us so that we can acknowledge and provide you with a desired feedback on your registered email</marquee></h2> 
+  <div class="container">
+    <form>
+      <label><b>COURSES YOU WANT TO ENROLL :</b></label>
+      <select required>
+        <option value=""><b>SELECT A COURSE</b></option>
+        <option value="movie1"><b>HTML </b></option>
+        <option value="movie2"><b>CSS</b> </option>
+        <option value="movie3"><b>JAVA</b> </option>
+        <option value="movie1"><b>JAVA SCRIPT </b></option>
+        <option value="movie2"><b>C PROGRAMMING </b></option>
+        <option value="movie3"><b>C++ </b></option>
+        <option value="movie1"><b>PYTHON </b></option>
+        <option value="movie2"><b>LINUX</b> </option>
+      </select>
+      
+      <label ><b>COURSES THAT ARE BEING CONDUCTED</b></label>
+      <select required>
+        <option value=""><b>SELECT A COURSE</b></option>
+        <option value="movie1"><b>HTML </b></option>
+        <option value="movie2"><b>CSS</b> </option>
+        <option value="movie3"><b>JAVA</b> </option>
+        <option value="movie1"><b>JAVA SCRIPT </b></option>
+        <option value="movie2"><b>C PROGRAMMING </b></option>
+        <option value="movie3"><b>C++ </b></option>
+        <option value="movie1"><b>PYTHON </b></option>
+        <option value="movie2"><b>LINUX</b> </option>
+      </select>
+
+      <label ><b>DATE YOU WANT TO ENROLL</b></label>
+      <input type="date" id="date" name="date" required>
+
+      <label ><b>TIME YOU WANT TO ENROLL</b></label>
+      <input type="time" id="time" name="time" required>
+
+      <label><b>NUMBER OF ENROLLMENT YOU WANT TO MAKE </b></label>
+      <input type="number" id="seats" name="seats" min="1" max="10" required >
+
+      <input type="submit" value="ENQUIRE NOW" style="border-radius: 3cm;margin-top: 1cm;">
+      
+    </form>
+  </div>
+</body>
+</html>
